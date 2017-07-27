@@ -1,5 +1,5 @@
-import lib.pandas as pd
-from lib.pandas import DataFrame
+import pandas as pd
+from pandas import DataFrame
 
 
 def lambda_handler(event, context):
