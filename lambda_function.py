@@ -1,5 +1,5 @@
-import pandas as pd
-from pandas import DataFrame
+import lib.pandas as pd
+from lib.pandas import DataFrame
 
 
 def lambda_handler(event, context):
@@ -9,3 +9,4 @@ def lambda_handler(event, context):
     test = pd.concat([df1, df2])
 
     return test
+
