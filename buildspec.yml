@@ -3,8 +3,7 @@ version: 0.1
 phases:
   install:
     commands:
-      - mkdir lib/
-      - pip install -t lib/ -r requirements.txt
+      - pip install -t . -r requirements.txt
   pre_build:
     commands:
       - echo hoge
