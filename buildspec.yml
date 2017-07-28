@@ -3,7 +3,7 @@ version: 0.1
 phases:
   install:
     commands:
-      - pip install -t . -r requirements.txt
+      - pip install -t $TARGET_DIRECTORY -r requirements.txt
   pre_build:
     commands:
       - echo hoge
@@ -13,5 +13,5 @@ phases:
 artifacts:
   type: zip
   files:
-    - "**/*"
+    - "target/*"
   discard-paths: no
