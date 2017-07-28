@@ -3,9 +3,10 @@ version: 0.1
 phases:
   install:
     commands:
-      - pip install -t $TARGET_DIRECTORY -r requirements.txt
       - mkdir target
-      - cp -r $TARGET_DIRECTORY/ target/
+      - pip install -t target -r requirements.txt
+      - mkdir target
+      - cp $TARGET_DIRECTORY/* target/
   pre_build:
     commands:
       - echo hoge
