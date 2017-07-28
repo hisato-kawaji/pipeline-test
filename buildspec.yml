@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       - mkdir target
-      - pip install -t target -r requirements.txt
+      - pip install -t ./target/ -r requirements.txt
       - cp $TARGET_DIRECTORY/* target/
   pre_build:
     commands:
